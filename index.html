@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilyass Oufir - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="matrix-bg" id="matrix-bg"></div>
+
+    <header class="glass-nav">
+        <div class="logo">&gt; I.Oufir<span class="cursor-blink">_</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav-about">À Propos</a></li>
+                <li><a href="#skills" data-i18n="nav-skills">Compétences</a></li>
+                <li><a href="#projects" data-i18n="nav-projects">Projets</a></li>
+                <li><a href="#motivation" data-i18n="nav-motivation">Motivation</a></li>
+                <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="lang-switch">
+            <button id="lang-fr" class="active">FR</button>
+            <span>|</span>
+            <button id="lang-en">EN</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <p class="greeting" data-i18n="hero-greeting">Bonjour, je suis</p>
+                <h1 class="glitch" data-i18n="hero-name">Ilyass Oufir</h1>
+                <h2 class="subtitle" data-i18n="hero-title">Étudiant en Infrastructure Digitale | Futur Ingénieur Système & Réseau</h2>
+                <div class="terminal-box">
+                    <span class="prompt">root@ilyass:~# </span><span id="typing-text"></span><span class="cursor-blink block"></span>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="cyber-btn" data-i18n="btn-contact">Me Contacter</a>
+                    <a href="https://github.com/ELYASOU" target="_blank" class="cyber-btn outline" data-i18n="btn-github">Mon GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section reveal">
+            <h2 class="section-title"><span class="tag">&lt;</span> <span data-i18n="section-about">À Propos de Moi</span> <span class="tag">/&gt;</span></h2>
+            <div class="about-grid">
+                <div class="about-card glass-panel">
+                    <p data-i18n="about-text-1">Étudiant en Infrastructure Digitale à l'OFPPT. Passionné par Linux, les Réseaux, la Cybersécurité et le DevOps.</p>
+                    <p data-i18n="about-text-2">Autodidacte, motivé, et toujours en train de construire des environnements de laboratoire (homelabs).</p>
+                    <p data-i18n="about-text-3">Reconnu pour ma capacité de résolution de problèmes et ma discipline.</p>
+                </div>
+                <div class="about-stats glass-panel">
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Learning Mode</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Motivated</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section reveal">
+            <h2 class="section-title"><span class="tag">&lt;</span> <span data-i18n="section-skills">Compétences Techniques</span> <span class="tag">/&gt;</span></h2>
+            <div class="skills-container">
+                <div class="skill-category glass-panel">
+                    <h3 data-i18n="skill-sysadmin">Administration Système</h3>
+                    <ul class="skill-list">
+                        <li>Linux (Arch Linux)</li>
+                        <li>Windows Server basics</li>
+                        <li>Virtual Machines</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-panel">
+                    <h3 data-i18n="skill-network">Réseaux</h3>
+                    <ul class="skill-list">
+                        <li>TCP/IP & Subnetting</li>
+                        <li>VLAN & Routing</li>
+                        <li>Network Troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-panel">
+                    <h3 data-i18n="skill-cyber">Cybersécurité</h3>
+                    <ul class="skill-list">
+                        <li>Linux hardening</li>
+                        <li>Basic pentesting & Nmap</li>
+                        <li>Firewall & Wireshark</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-panel">
+                    <h3 data-i18n="skill-prog">Programmation & Outils</h3>
+                    <ul class="skill-list">
+                        <li>Python, Bash, PowerShell</li>
+                        <li>Git & GitHub</li>
+                        <li>VirtualBox, VMware, Packet Tracer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section reveal">
+            <h2 class="section-title"><span class="tag">&lt;</span> <span data-i18n="section-projects">Projets Académiques & Personnels</span> <span class="tag">/&gt;</span></h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be injected here via JS -->
+            </div>
+        </section>
+
+        <section id="motivation" class="section motivation-section reveal">
+            <h2 class="section-title"><span class="tag">&lt;</span> <span data-i18n="section-motivation">Ma Vision & Motivation</span> <span class="tag">/&gt;</span></h2>
+            <div class="motivation-content glass-panel">
+                <div class="terminal-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="terminal-title">vision.sh</span>
+                </div>
+                <p class="terminal-body" data-i18n="motivation-text">
+                    Ma vision est de concevoir, sécuriser et maintenir les infrastructures de demain. Mon ambition est d'évoluer vers un poste d'Ingénieur Cybersécurité / DevOps, où je pourrai combiner développement, automatisation et sécurité des systèmes d'information. J'aime apprendre continuellement et relever des défis techniques.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section reveal">
+            <h2 class="section-title"><span class="tag">&lt;</span> <span data-i18n="section-contact">Me Contacter</span> <span class="tag">/&gt;</span></h2>
+            <div class="contact-container glass-panel">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <h4 data-i18n="contact-phone">Téléphone</h4>
+                            <p>+212 691 627 561</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">💼</div>
+                        <div>
+                            <h4 data-i18n="contact-linkedin">LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/ilyass-oufir-475077361/" target="_blank">Ilyass Oufir</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">💻</div>
+                        <div>
+                            <h4 data-i18n="contact-github">GitHub</h4>
+                            <a href="https://github.com/ELYASOU" target="_blank">ELYASOU</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name" data-i18n="form-name">Votre Nom</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email" data-i18n="form-email">Votre Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required placeholder=" " rows="4"></textarea>
+                        <label for="message" data-i18n="form-message">Votre Message</label>
+                    </div>
+                    <button type="submit" class="cyber-btn" data-i18n="form-submit">Envoyer le Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ilyass Oufir. <span class="sys-status">System Online <span class="pulse"></span></span></p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
